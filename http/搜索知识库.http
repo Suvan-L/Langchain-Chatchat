@@ -1,0 +1,12 @@
+### 搜索知识库
+POST {{url}}/search_docs
+Content-Type: application/json
+
+{
+  "query": "CAP定理",
+  "knowledge_base_name": "interview",
+  "top_k": 3,
+  "score_threshold": 1,
+  "file_name": "",
+  "metadata": {}
+}
