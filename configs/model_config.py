@@ -28,7 +28,8 @@ EMBEDDING_MODEL_OUTPUT_PATH = "output"
 # 如果你的显存不足，可使用 Qwen-1_8B-Chat, 该模型 FP16 仅需 3.8G显存。
 
 # LLM_MODELS = ["chatglm3-6b"]
-LLM_MODELS = ["Qwen-1_8B-Chat"]
+# LLM_MODELS = ["Qwen-1_8B-Chat"]
+LLM_MODELS = ["Baichuan2-13B-Chat-4bits"] # 先将大模型单独部署环境调试成功，再考虑接入 langchain
 Agent_MODEL = None
 
 # LLM 模型运行设备。设为"auto"会自动检测(会有警告)，也可手动设定为 "cuda","mps","cpu","xpu" 其中之一。
@@ -199,6 +200,8 @@ MODEL_PATH = {
         "baichuan-13b-chat": "baichuan-inc/Baichuan-13B-Chat",
         "baichuan2-7b-chat": "baichuan-inc/Baichuan2-7B-Chat",
         "baichuan2-13b-chat": "baichuan-inc/Baichuan2-13B-Chat",
+        "Baichuan2-13B-Chat-4bits": "baichuan-inc/Baichuan2-13B-Chat-4bits",
+
 
         "internlm-7b": "internlm/internlm-7b",
         "internlm-chat-7b": "internlm/internlm-chat-7b",
